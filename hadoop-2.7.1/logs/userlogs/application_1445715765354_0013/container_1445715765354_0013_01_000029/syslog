@@ -1,0 +1,12 @@
+2015-10-25 15:51:59,262 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 15:52:00,171 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 15:52:00,970 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 15:52:00,974 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ReduceTask metrics system started
+2015-10-25 15:52:01,138 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2015-10-25 15:52:01,150 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1445715765354_0013, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@c5898a)
+2015-10-25 15:52:02,254 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2015-10-25 15:52:05,726 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-de-weikung/nm-local-dir/usercache/de-weikung/appcache/application_1445715765354_0013
+2015-10-25 15:52:10,315 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-10-25 15:52:18,357 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 15:52:18,563 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-10-25 15:52:19,140 INFO [main] org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@124026

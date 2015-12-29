@@ -1,0 +1,19 @@
+2015-10-25 17:48:07,957 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 17:48:08,157 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 17:48:08,288 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 17:48:08,288 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ReduceTask metrics system started
+2015-10-25 17:48:08,311 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2015-10-25 17:48:08,311 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1445813912906_0008, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@bd648a)
+2015-10-25 17:48:08,429 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2015-10-25 17:48:08,787 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-de-weikung/nm-local-dir/usercache/de-weikung/appcache/application_1445813912906_0008
+2015-10-25 17:48:09,052 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-10-25 17:48:09,649 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 17:48:09,674 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-10-25 17:48:09,725 INFO [main] org.apache.hadoop.mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@f63bb8
+2015-10-25 17:48:11,093 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1445813912906_0008_r_000000_0 is done. And is in the process of committing
+2015-10-25 17:48:11,138 INFO [main] org.apache.hadoop.mapred.Task: Task attempt_1445813912906_0008_r_000000_0 is allowed to commit now
+2015-10-25 17:48:11,146 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: Saved output of task 'attempt_1445813912906_0008_r_000000_0' to hdfs://hadoopmaster:9000/output/_temporary/1/task_1445813912906_0008_r_000000
+2015-10-25 17:48:11,177 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1445813912906_0008_r_000000_0' done.
+2015-10-25 17:48:11,178 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping ReduceTask metrics system...
+2015-10-25 17:48:11,178 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ReduceTask metrics system stopped.
+2015-10-25 17:48:11,178 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: ReduceTask metrics system shutdown complete.

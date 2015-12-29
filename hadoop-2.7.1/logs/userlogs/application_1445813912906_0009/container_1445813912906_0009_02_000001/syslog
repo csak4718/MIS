@@ -1,0 +1,588 @@
+2015-10-25 17:57:06,544 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Created MRAppMaster for application appattempt_1445813912906_0009_000002
+2015-10-25 17:57:06,873 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 17:57:06,909 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Executing with tokens:
+2015-10-25 17:57:06,909 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Kind: YARN_AM_RM_TOKEN, Service: , Ident: (appAttemptId { application_id { id: 9 cluster_timestamp: 1445813912906 } attemptId: 2 } keyId: 2003683183)
+2015-10-25 17:57:07,917 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter set in config null
+2015-10-25 17:57:07,918 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2015-10-25 17:57:07,962 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.jobhistory.EventType for class org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler
+2015-10-25 17:57:07,963 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher
+2015-10-25 17:57:07,967 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskEventDispatcher
+2015-10-25 17:57:07,968 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.TaskAttemptEventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$TaskAttemptEventDispatcher
+2015-10-25 17:57:07,968 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventType for class org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler
+2015-10-25 17:57:07,975 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.speculate.Speculator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$SpeculatorEventDispatcher
+2015-10-25 17:57:07,975 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.rm.ContainerAllocator$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerAllocatorRouter
+2015-10-25 17:57:07,976 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncher$EventType for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$ContainerLauncherRouter
+2015-10-25 17:57:08,038 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://hadoopmaster:9000]
+2015-10-25 17:57:08,068 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://hadoopmaster:9000]
+2015-10-25 17:57:08,103 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://hadoopmaster:9000]
+2015-10-25 17:57:08,117 INFO [main] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Emitting job history data to the timeline server is not enabled
+2015-10-25 17:57:08,127 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 17:57:08,129 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Recovery is enabled. Will try to recover from previous life on best effort basis.
+2015-10-25 17:57:08,158 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://hadoopmaster:9000]
+2015-10-25 17:57:08,162 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Previous history file is at hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job_1445813912906_0009_1.jhist
+2015-10-25 17:57:09,249 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:10,250 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:11,250 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:12,252 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:13,254 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:14,255 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:15,257 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:16,259 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:17,259 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:18,260 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:18,264 WARN [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Unable to parse prior job history, aborting recovery
+java.io.IOException: Cannot obtain block length for LocatedBlock{BP-1892222280-192.168.54.130-1445296806381:blk_1073742233_1412; getBlockSize()=29263; corrupt=false; offset=0; locs=[DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]]}
+	at org.apache.hadoop.hdfs.DFSInputStream.readBlockLength(DFSInputStream.java:390)
+	at org.apache.hadoop.hdfs.DFSInputStream.fetchLocatedBlocksAndGetLastBlockLength(DFSInputStream.java:333)
+	at org.apache.hadoop.hdfs.DFSInputStream.openInfo(DFSInputStream.java:269)
+	at org.apache.hadoop.hdfs.DFSInputStream.<init>(DFSInputStream.java:261)
+	at org.apache.hadoop.hdfs.DFSClient.open(DFSClient.java:1540)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:303)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:299)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.open(DistributedFileSystem.java:299)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:767)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.getPreviousJobHistoryStream(MRAppMaster.java:1199)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.parsePreviousJobHistory(MRAppMaster.java:1203)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.processRecovery(MRAppMaster.java:1175)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1039)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:18,297 INFO [main] org.apache.hadoop.mapreduce.v2.jobhistory.JobHistoryUtils: Default file system [hdfs://hadoopmaster:9000]
+2015-10-25 17:57:18,301 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Previous history file is at hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job_1445813912906_0009_1.jhist
+2015-10-25 17:57:19,312 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:20,314 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 1 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:21,314 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 2 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:22,316 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 3 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:23,317 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 4 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:24,318 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 5 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:25,319 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 6 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:26,320 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 7 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:27,320 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 8 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:28,322 INFO [main] org.apache.hadoop.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:50020. Already tried 9 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1000 MILLISECONDS)
+2015-10-25 17:57:28,323 WARN [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Could not parse the old history file. Will not have old AMinfos 
+java.io.IOException: Cannot obtain block length for LocatedBlock{BP-1892222280-192.168.54.130-1445296806381:blk_1073742233_1412; getBlockSize()=29263; corrupt=false; offset=0; locs=[DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]]}
+	at org.apache.hadoop.hdfs.DFSInputStream.readBlockLength(DFSInputStream.java:390)
+	at org.apache.hadoop.hdfs.DFSInputStream.fetchLocatedBlocksAndGetLastBlockLength(DFSInputStream.java:333)
+	at org.apache.hadoop.hdfs.DFSInputStream.openInfo(DFSInputStream.java:269)
+	at org.apache.hadoop.hdfs.DFSInputStream.<init>(DFSInputStream.java:261)
+	at org.apache.hadoop.hdfs.DFSClient.open(DFSClient.java:1540)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:303)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$3.doCall(DistributedFileSystem.java:299)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.open(DistributedFileSystem.java:299)
+	at org.apache.hadoop.fs.FileSystem.open(FileSystem.java:767)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.getPreviousJobHistoryStream(MRAppMaster.java:1199)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.readJustAMInfos(MRAppMaster.java:1251)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.processRecovery(MRAppMaster.java:1179)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1039)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:28,377 INFO [main] org.apache.hadoop.yarn.event.AsyncDispatcher: Registering class org.apache.hadoop.mapreduce.v2.app.job.event.JobFinishEvent$Type for class org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobFinishEventHandler
+2015-10-25 17:57:28,601 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 17:57:28,768 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 17:57:28,768 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MRAppMaster metrics system started
+2015-10-25 17:57:28,810 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Adding job token for job_1445813912906_0009 to jobTokenSecretManager
+2015-10-25 17:57:28,864 WARN [main] org.apache.hadoop.hdfs.BlockReaderFactory: I/O error constructing remote block reader.
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:28,864 WARN [main] org.apache.hadoop.hdfs.DFSClient: Failed to connect to /192.168.54.130:50010 for block, add to deadNodes and continue. java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:28,864 INFO [main] org.apache.hadoop.hdfs.DFSClient: Could not obtain BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 from any node: java.io.IOException: No live nodes contain block BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 after checking nodes = [DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]], ignoredNodes = null No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]. Will get new block locations from namenode and retry...
+2015-10-25 17:57:28,865 WARN [main] org.apache.hadoop.hdfs.DFSClient: DFS chooseDataNode: got # 1 IOException, will wait for 2547.3051825414586 msec.
+2015-10-25 17:57:31,417 WARN [main] org.apache.hadoop.hdfs.BlockReaderFactory: I/O error constructing remote block reader.
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:31,418 WARN [main] org.apache.hadoop.hdfs.DFSClient: Failed to connect to /192.168.54.130:50010 for block, add to deadNodes and continue. java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:31,418 INFO [main] org.apache.hadoop.hdfs.DFSClient: Could not obtain BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 from any node: java.io.IOException: No live nodes contain block BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 after checking nodes = [DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]], ignoredNodes = null No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]. Will get new block locations from namenode and retry...
+2015-10-25 17:57:31,418 WARN [main] org.apache.hadoop.hdfs.DFSClient: DFS chooseDataNode: got # 2 IOException, will wait for 3534.5184651051254 msec.
+2015-10-25 17:57:34,956 WARN [main] org.apache.hadoop.hdfs.BlockReaderFactory: I/O error constructing remote block reader.
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:34,956 WARN [main] org.apache.hadoop.hdfs.DFSClient: Failed to connect to /192.168.54.130:50010 for block, add to deadNodes and continue. java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:34,957 INFO [main] org.apache.hadoop.hdfs.DFSClient: Could not obtain BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 from any node: java.io.IOException: No live nodes contain block BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 after checking nodes = [DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]], ignoredNodes = null No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]. Will get new block locations from namenode and retry...
+2015-10-25 17:57:34,957 WARN [main] org.apache.hadoop.hdfs.DFSClient: DFS chooseDataNode: got # 3 IOException, will wait for 10725.143722823068 msec.
+2015-10-25 17:57:45,699 WARN [main] org.apache.hadoop.hdfs.BlockReaderFactory: I/O error constructing remote block reader.
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:45,701 WARN [main] org.apache.hadoop.hdfs.DFSClient: Failed to connect to /192.168.54.130:50010 for block, add to deadNodes and continue. java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:45,701 WARN [main] org.apache.hadoop.hdfs.DFSClient: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]. Throwing a BlockMissingException
+2015-10-25 17:57:45,701 WARN [main] org.apache.hadoop.hdfs.DFSClient: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo No live nodes contain current block Block locations: DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK] Dead nodes:  DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]. Throwing a BlockMissingException
+2015-10-25 17:57:45,701 WARN [main] org.apache.hadoop.hdfs.DFSClient: DFS Read
+org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:945)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:604)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+2015-10-25 17:57:45,702 WARN [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: Job init failed
+org.apache.hadoop.yarn.exceptions.YarnRuntimeException: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1568)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+Caused by: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:945)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:604)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	... 17 more
+2015-10-25 17:57:45,707 INFO [main] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: MRAppMaster launching normal, non-uberized, multi-container job job_1445813912906_0009.
+2015-10-25 17:57:45,761 INFO [main] org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-25 17:57:45,775 INFO [Socket Reader #1 for port 51905] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 51905
+2015-10-25 17:57:45,849 INFO [main] org.apache.hadoop.yarn.factories.impl.pb.RpcServerFactoryPBImpl: Adding protocol org.apache.hadoop.mapreduce.v2.api.MRClientProtocolPB to the server
+2015-10-25 17:57:45,849 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-10-25 17:57:45,850 INFO [IPC Server listener on 51905] org.apache.hadoop.ipc.Server: IPC Server listener on 51905: starting
+2015-10-25 17:57:45,851 INFO [main] org.apache.hadoop.mapreduce.v2.app.client.MRClientService: Instantiated MRClientService at hadoopmaster/192.168.54.130:51905
+2015-10-25 17:57:45,999 INFO [main] org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-10-25 17:57:46,013 INFO [main] org.apache.hadoop.security.authentication.server.AuthenticationFilter: Unable to initialize FileSignerSecretProvider, falling back to use random secrets.
+2015-10-25 17:57:46,023 INFO [main] org.apache.hadoop.http.HttpRequestLog: Http request log for http.requests.mapreduce is not defined
+2015-10-25 17:57:46,036 INFO [main] org.apache.hadoop.http.HttpServer2: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer2$QuotingInputFilter)
+2015-10-25 17:57:46,056 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context mapreduce
+2015-10-25 17:57:46,056 INFO [main] org.apache.hadoop.http.HttpServer2: Added filter AM_PROXY_FILTER (class=org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter) to context static
+2015-10-25 17:57:46,075 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /mapreduce/*
+2015-10-25 17:57:46,075 INFO [main] org.apache.hadoop.http.HttpServer2: adding path spec: /ws/*
+2015-10-25 17:57:46,120 INFO [main] org.apache.hadoop.http.HttpServer2: Jetty bound to port 36193
+2015-10-25 17:57:46,120 INFO [main] org.mortbay.log: jetty-6.1.26
+2015-10-25 17:57:46,222 INFO [main] org.mortbay.log: Extract jar:file:/usr/local/hadoop-2.7.1/share/hadoop/yarn/hadoop-yarn-common-2.7.1.jar!/webapps/mapreduce to /tmp/Jetty_0_0_0_0_36193_mapreduce____xxurxt/webapp
+2015-10-25 17:57:46,440 INFO [main] org.mortbay.log: Started HttpServer2$SelectChannelConnectorWithSafeStartup@0.0.0.0:36193
+2015-10-25 17:57:46,440 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Web app /mapreduce started at 36193
+2015-10-25 17:57:47,445 INFO [main] org.apache.hadoop.yarn.webapp.WebApps: Registered webapp guice modules
+2015-10-25 17:57:47,484 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.speculate.DefaultSpeculator: JOB_CREATE job_1445813912906_0009
+2015-10-25 17:57:47,500 INFO [main] org.apache.hadoop.ipc.CallQueueManager: Using callQueue class java.util.concurrent.LinkedBlockingQueue
+2015-10-25 17:57:47,507 INFO [Socket Reader #1 for port 55991] org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 55991
+2015-10-25 17:57:47,549 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2015-10-25 17:57:47,563 INFO [IPC Server listener on 55991] org.apache.hadoop.ipc.Server: IPC Server listener on 55991: starting
+2015-10-25 17:57:47,692 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: nodeBlacklistingEnabled:true
+2015-10-25 17:57:47,692 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: maxTaskFailuresPerNode is 3
+2015-10-25 17:57:47,692 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerRequestor: blacklistDisablePercent is 33
+2015-10-25 17:57:47,901 INFO [main] org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManager at hadoopmaster/192.168.54.130:8030
+2015-10-25 17:57:48,131 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: maxContainerCapability: <memory:8192, vCores:32>
+2015-10-25 17:57:48,131 INFO [main] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: queue: default
+2015-10-25 17:57:48,136 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: Upper limit on the thread pool size is 500
+2015-10-25 17:57:48,136 INFO [main] org.apache.hadoop.mapreduce.v2.app.launcher.ContainerLauncherImpl: The thread pool initial size is 10
+2015-10-25 17:57:48,141 INFO [main] org.apache.hadoop.yarn.client.api.impl.ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+2015-10-25 17:57:48,146 INFO [main] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1445813912906_0009Job Transitioned from NEW to FAIL_ABORT
+2015-10-25 17:57:48,150 INFO [CommitterEvent Processor #0] org.apache.hadoop.mapreduce.v2.app.commit.CommitterEventHandler: Processing the event EventType: JOB_ABORT
+2015-10-25 17:57:48,187 INFO [AsyncDispatcher event handler] org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl: job_1445813912906_0009Job Transitioned from FAIL_ABORT to FAILED
+2015-10-25 17:57:48,189 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: We are finishing cleanly so this is the last retry
+2015-10-25 17:57:48,189 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify RMCommunicator isAMLastRetry: true
+2015-10-25 17:57:48,192 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: RMCommunicator notified that shouldUnregistered is: true
+2015-10-25 17:57:48,195 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Notify JHEH isAMLastRetry: true
+2015-10-25 17:57:48,195 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: JobHistoryEventHandler notified that forceJobCompletion is true
+2015-10-25 17:57:48,195 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Calling stop for all the services
+2015-10-25 17:57:48,197 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopping JobHistoryEventHandler. Size of the outstanding queue size is 3
+2015-10-25 17:57:48,303 INFO [eventHandlingThread] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Event Writer setup for JobId: job_1445813912906_0009, File: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job_1445813912906_0009_2.jhist
+2015-10-25 17:57:48,445 INFO [Thread-61] org.apache.hadoop.hdfs.DFSClient: Exception in createBlockOutputStream
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSOutputStream.createSocketForPipeline(DFSOutputStream.java:1508)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.createBlockOutputStream(DFSOutputStream.java:1284)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1237)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:449)
+2015-10-25 17:57:48,446 INFO [Thread-61] org.apache.hadoop.hdfs.DFSClient: Abandoning BP-1892222280-192.168.54.130-1445296806381:blk_1073742234_1413
+2015-10-25 17:57:48,480 INFO [Thread-61] org.apache.hadoop.hdfs.DFSClient: Excluding datanode DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]
+2015-10-25 17:57:48,678 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: In stop, writing event JOB_SUBMITTED
+2015-10-25 17:57:48,679 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: In stop, writing event JOB_QUEUE_CHANGED
+2015-10-25 17:57:48,680 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: In stop, writing event JOB_FAILED
+2015-10-25 17:57:48,684 INFO [Thread-59] org.apache.hadoop.hdfs.DFSClient: Exception in createBlockOutputStream
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSOutputStream.createSocketForPipeline(DFSOutputStream.java:1508)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.createBlockOutputStream(DFSOutputStream.java:1284)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1237)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:449)
+2015-10-25 17:57:48,684 INFO [Thread-59] org.apache.hadoop.hdfs.DFSClient: Abandoning BP-1892222280-192.168.54.130-1445296806381:blk_1073742236_1415
+2015-10-25 17:57:48,690 INFO [Thread-59] org.apache.hadoop.hdfs.DFSClient: Excluding datanode DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]
+2015-10-25 17:57:48,759 INFO [Thread-65] org.apache.hadoop.hdfs.DFSClient: Exception in createBlockOutputStream
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSOutputStream.createSocketForPipeline(DFSOutputStream.java:1508)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.createBlockOutputStream(DFSOutputStream.java:1284)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1237)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:449)
+2015-10-25 17:57:48,759 INFO [Thread-65] org.apache.hadoop.hdfs.DFSClient: Abandoning BP-1892222280-192.168.54.130-1445296806381:blk_1073742238_1417
+2015-10-25 17:57:48,760 INFO [Thread-65] org.apache.hadoop.hdfs.DFSClient: Excluding datanode DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]
+2015-10-25 17:57:48,787 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job_1445813912906_0009_2.jhist to hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009-1445820932782-de%2Dweikung-wordcount-1445821068184-0-0-FAILED-default-1445821026462.jhist_tmp
+2015-10-25 17:57:48,820 INFO [Thread-67] org.apache.hadoop.hdfs.DFSClient: Exception in createBlockOutputStream
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSOutputStream.createSocketForPipeline(DFSOutputStream.java:1508)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.createBlockOutputStream(DFSOutputStream.java:1284)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1237)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:449)
+2015-10-25 17:57:48,820 INFO [Thread-67] org.apache.hadoop.hdfs.DFSClient: Abandoning BP-1892222280-192.168.54.130-1445296806381:blk_1073742240_1419
+2015-10-25 17:57:48,822 INFO [Thread-67] org.apache.hadoop.hdfs.DFSClient: Excluding datanode DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]
+2015-10-25 17:57:48,839 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009-1445820932782-de%2Dweikung-wordcount-1445821068184-0-0-FAILED-default-1445821026462.jhist_tmp
+2015-10-25 17:57:48,843 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copying hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job_1445813912906_0009_2_conf.xml to hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009_conf.xml_tmp
+2015-10-25 17:57:48,862 INFO [Thread-70] org.apache.hadoop.hdfs.DFSClient: Exception in createBlockOutputStream
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSOutputStream.createSocketForPipeline(DFSOutputStream.java:1508)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.createBlockOutputStream(DFSOutputStream.java:1284)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.nextBlockOutputStream(DFSOutputStream.java:1237)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:449)
+2015-10-25 17:57:48,864 INFO [Thread-70] org.apache.hadoop.hdfs.DFSClient: Abandoning BP-1892222280-192.168.54.130-1445296806381:blk_1073742242_1421
+2015-10-25 17:57:48,865 INFO [Thread-70] org.apache.hadoop.hdfs.DFSClient: Excluding datanode DatanodeInfoWithStorage[192.168.54.130:50010,DS-9542acc5-b77c-490d-b6f6-36292d9799cd,DISK]
+2015-10-25 17:57:48,885 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Copied to done location: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009_conf.xml_tmp
+2015-10-25 17:57:48,896 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009.summary_tmp to hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009.summary
+2015-10-25 17:57:48,901 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009_conf.xml_tmp to hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009_conf.xml
+2015-10-25 17:57:48,904 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Moved tmp to done: hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009-1445820932782-de%2Dweikung-wordcount-1445821068184-0-0-FAILED-default-1445821026462.jhist_tmp to hdfs://hadoopmaster:9000/tmp/hadoop-yarn/staging/history/done_intermediate/de-weikung/job_1445813912906_0009-1445820932782-de%2Dweikung-wordcount-1445821068184-0-0-FAILED-default-1445821026462.jhist
+2015-10-25 17:57:48,904 INFO [Thread-58] org.apache.hadoop.mapreduce.jobhistory.JobHistoryEventHandler: Stopped JobHistoryEventHandler. super.stop()
+2015-10-25 17:57:48,906 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Setting job diagnostics to Job init failed : org.apache.hadoop.yarn.exceptions.YarnRuntimeException: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1568)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1432)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.transition(JobImpl.java:1390)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$MultipleInternalArc.doTransition(StateMachineFactory.java:385)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.doTransition(StateMachineFactory.java:302)
+	at org.apache.hadoop.yarn.state.StateMachineFactory.access$300(StateMachineFactory.java:46)
+	at org.apache.hadoop.yarn.state.StateMachineFactory$InternalStateMachine.doTransition(StateMachineFactory.java:448)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:996)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl.handle(JobImpl.java:138)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$JobEventDispatcher.handle(MRAppMaster.java:1312)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.serviceStart(MRAppMaster.java:1080)
+	at org.apache.hadoop.service.AbstractService.start(AbstractService.java:193)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster$4.run(MRAppMaster.java:1519)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.initAndStartAppMaster(MRAppMaster.java:1515)
+	at org.apache.hadoop.mapreduce.v2.app.MRAppMaster.main(MRAppMaster.java:1448)
+Caused by: org.apache.hadoop.hdfs.BlockMissingException: Could not obtain block: BP-1892222280-192.168.54.130-1445296806381:blk_1073742230_1409 file=/tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009/job.splitmetainfo
+	at org.apache.hadoop.hdfs.DFSInputStream.chooseDataNode(DFSInputStream.java:945)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:604)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at java.io.DataInputStream.readFully(DataInputStream.java:195)
+	at java.io.DataInputStream.readFully(DataInputStream.java:169)
+	at org.apache.hadoop.mapreduce.split.SplitMetaInfoReader.readSplitMetaInfo(SplitMetaInfoReader.java:58)
+	at org.apache.hadoop.mapreduce.v2.app.job.impl.JobImpl$InitTransition.createSplits(JobImpl.java:1563)
+	... 17 more
+
+
+2015-10-25 17:57:48,907 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: History url is http://hadoopmaster:19888/jobhistory/job/job_1445813912906_0009
+2015-10-25 17:57:48,918 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.rm.RMCommunicator: Waiting for application to be successfully unregistered.
+2015-10-25 17:57:49,927 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.rm.RMContainerAllocator: Final Stats: PendingReds:0 ScheduledMaps:0 ScheduledReds:0 AssignedMaps:0 AssignedReds:0 CompletedMaps:0 CompletedReds:0 ContAlloc:0 ContRel:0 HostLocal:0 RackLocal:0
+2015-10-25 17:57:49,928 INFO [Thread-58] org.apache.hadoop.mapreduce.v2.app.MRAppMaster: Deleting staging directory hdfs://hadoopmaster:9000 /tmp/hadoop-yarn/staging/de-weikung/.staging/job_1445813912906_0009
+2015-10-25 17:57:49,933 INFO [Thread-58] org.apache.hadoop.ipc.Server: Stopping server on 55991
+2015-10-25 17:57:49,943 INFO [IPC Server listener on 55991] org.apache.hadoop.ipc.Server: Stopping IPC Server listener on 55991
+2015-10-25 17:57:49,949 INFO [IPC Server Responder] org.apache.hadoop.ipc.Server: Stopping IPC Server Responder
+2015-10-25 17:57:49,949 INFO [TaskHeartbeatHandler PingChecker] org.apache.hadoop.mapreduce.v2.app.TaskHeartbeatHandler: TaskHeartbeatHandler thread interrupted

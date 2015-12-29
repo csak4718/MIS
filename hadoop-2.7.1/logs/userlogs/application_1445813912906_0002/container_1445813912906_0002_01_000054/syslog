@@ -1,0 +1,29 @@
+2015-10-25 16:15:15,485 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 16:15:15,832 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 16:15:16,063 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 16:15:16,063 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2015-10-25 16:15:16,102 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2015-10-25 16:15:16,102 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1445813912906_0002, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@bd648a)
+2015-10-25 16:15:16,373 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2015-10-25 16:15:18,453 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-de-weikung/nm-local-dir/usercache/de-weikung/appcache/application_1445813912906_0002
+2015-10-25 16:15:20,667 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-10-25 16:15:25,596 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 16:15:25,758 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-10-25 16:15:27,482 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://hadoopmaster:9000/input/chap54:0+8866
+2015-10-25 16:15:27,735 INFO [main] org.apache.hadoop.mapred.MapTask: numReduceTasks: 1
+2015-10-25 16:15:31,237 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-10-25 16:15:31,254 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-10-25 16:15:31,254 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-10-25 16:15:31,254 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-10-25 16:15:31,254 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-10-25 16:15:31,325 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-10-25 16:15:33,190 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-10-25 16:15:33,195 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2015-10-25 16:15:33,195 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 2005490; bufvoid = 104857600
+2015-10-25 16:15:33,195 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 25663480(102653920); length = 550917/6553600
+2015-10-25 16:15:39,133 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-10-25 16:15:39,297 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1445813912906_0002_m_000043_0 is done. And is in the process of committing
+2015-10-25 16:15:39,926 INFO [main] org.apache.hadoop.mapred.Task: Task 'attempt_1445813912906_0002_m_000043_0' done.
+2015-10-25 16:15:39,935 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2015-10-25 16:15:39,946 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2015-10-25 16:15:39,946 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.

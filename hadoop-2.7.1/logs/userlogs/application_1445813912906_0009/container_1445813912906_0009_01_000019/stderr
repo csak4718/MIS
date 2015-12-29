@@ -1,0 +1,2 @@
+Error: dl failure on line 894
+Error: failed /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/libjvm.so, because /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/libjvm.so: cannot map zero-fill pages: Cannot allocate memory

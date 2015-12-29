@@ -1,0 +1,1 @@
+djobId=job_1445813912906_0012,submitTime=1445833459541,launchTime=1445833462892,firstMapTaskLaunchTime=1445833465276,firstReduceTaskLaunchTime=1445833503479,finishTime=1445833707717,resourcesPerMap=1024,resourcesPerReduce=1024,numMaps=62,numReduces=1,user=de-weikung,queue=default,status=SUCCEEDED,mapSlotSeconds=1665,reduceSlotSeconds=201,jobName=wordcount

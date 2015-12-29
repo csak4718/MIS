@@ -1,0 +1,143 @@
+2015-10-25 21:53:09,137 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 21:53:10,119 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 21:53:10,790 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 21:53:10,790 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2015-10-25 21:53:10,860 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2015-10-25 21:53:10,860 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1445813912906_0014, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@24ece4)
+2015-10-25 21:53:11,920 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2015-10-25 21:53:13,598 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-de-weikung/nm-local-dir/usercache/de-weikung/appcache/application_1445813912906_0014
+2015-10-25 21:53:15,017 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-10-25 21:53:18,549 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 21:53:18,713 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-10-25 21:53:20,837 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://hadoopmaster:9000/input/chap55:0+12994
+2015-10-25 21:53:21,425 INFO [main] org.apache.hadoop.mapred.MapTask: numReduceTasks: 1
+2015-10-25 21:53:26,585 INFO [main] org.apache.hadoop.mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2015-10-25 21:53:26,616 INFO [main] org.apache.hadoop.mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2015-10-25 21:53:26,616 INFO [main] org.apache.hadoop.mapred.MapTask: soft limit at 83886080
+2015-10-25 21:53:26,616 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2015-10-25 21:53:26,616 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396; length = 6553600
+2015-10-25 21:53:26,965 INFO [main] org.apache.hadoop.mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2015-10-25 21:53:29,068 INFO [main] org.apache.hadoop.mapred.MapTask: Starting flush of map output
+2015-10-25 21:53:29,069 INFO [main] org.apache.hadoop.mapred.MapTask: Spilling map output
+2015-10-25 21:53:29,069 INFO [main] org.apache.hadoop.mapred.MapTask: bufstart = 0; bufend = 1041524; bufvoid = 104857600
+2015-10-25 21:53:29,070 INFO [main] org.apache.hadoop.mapred.MapTask: kvstart = 26214396(104857584); kvend = 25851552(103406208); length = 362845/6553600
+2015-10-25 21:53:31,346 INFO [main] org.apache.hadoop.mapred.MapTask: Finished spill 0
+2015-10-25 21:53:31,517 INFO [main] org.apache.hadoop.mapred.Task: Task:attempt_1445813912906_0014_m_000016_1 is done. And is in the process of committing
+2015-10-25 21:53:33,309 WARN [main] org.apache.hadoop.ipc.Client: Exception encountered while connecting to the server : java.io.IOException: Connection reset by peer
+2015-10-25 21:53:33,463 WARN [main] org.apache.hadoop.mapred.YarnChild: Exception running child : java.io.IOException: Failed on local exception: java.io.IOException: java.io.IOException: Connection reset by peer; Host Details : local host is: "hadoopmaster/192.168.54.130"; destination host is: "hadoopmaster":9000; 
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:773)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1480)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1407)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy12.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.getFileInfo(ClientNamenodeProtocolTranslatorPB.java:771)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy13.getFileInfo(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.getFileInfo(DFSClient.java:2116)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$22.doCall(DistributedFileSystem.java:1305)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$22.doCall(DistributedFileSystem.java:1301)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1301)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:1424)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.needsTaskCommit(FileOutputCommitter.java:541)
+	at org.apache.hadoop.mapred.FileOutputCommitter.needsTaskCommit(FileOutputCommitter.java:183)
+	at org.apache.hadoop.mapred.OutputCommitter.needsTaskCommit(OutputCommitter.java:299)
+	at org.apache.hadoop.mapred.Task.isCommitRequired(Task.java:1085)
+	at org.apache.hadoop.mapred.Task.done(Task.java:1042)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:345)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+Caused by: java.io.IOException: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client$Connection$1.run(Client.java:682)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.ipc.Client$Connection.handleSaslConnectionFailure(Client.java:645)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:732)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:370)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1529)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1446)
+	... 28 more
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:197)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:57)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:161)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:131)
+	at java.io.FilterInputStream.read(FilterInputStream.java:133)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.hadoop.security.SaslRpcClient.saslConnect(SaslRpcClient.java:367)
+	at org.apache.hadoop.ipc.Client$Connection.setupSaslConnection(Client.java:555)
+	at org.apache.hadoop.ipc.Client$Connection.access$1800(Client.java:370)
+	at org.apache.hadoop.ipc.Client$Connection$2.run(Client.java:724)
+	at org.apache.hadoop.ipc.Client$Connection$2.run(Client.java:720)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:719)
+	... 31 more
+
+2015-10-25 21:53:33,835 INFO [main] org.apache.hadoop.mapred.Task: Runnning cleanup for the task
+2015-10-25 21:53:33,857 INFO [main] org.apache.hadoop.mapred.YarnChild: Exception cleaning up: java.net.ConnectException: Call From hadoopmaster/192.168.54.130 to hadoopmaster:9000 failed on connection exception: java.net.ConnectException: Connection refused; For more details see:  http://wiki.apache.org/hadoop/ConnectionRefused
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.apache.hadoop.net.NetUtils.wrapWithMessage(NetUtils.java:792)
+	at org.apache.hadoop.net.NetUtils.wrapException(NetUtils.java:732)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1480)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1407)
+	at org.apache.hadoop.ipc.ProtobufRpcEngine$Invoker.invoke(ProtobufRpcEngine.java:229)
+	at com.sun.proxy.$Proxy12.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.protocolPB.ClientNamenodeProtocolTranslatorPB.delete(ClientNamenodeProtocolTranslatorPB.java:540)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invokeMethod(RetryInvocationHandler.java:187)
+	at org.apache.hadoop.io.retry.RetryInvocationHandler.invoke(RetryInvocationHandler.java:102)
+	at com.sun.proxy.$Proxy13.delete(Unknown Source)
+	at org.apache.hadoop.hdfs.DFSClient.delete(DFSClient.java:2052)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$14.doCall(DistributedFileSystem.java:707)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$14.doCall(DistributedFileSystem.java:703)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:703)
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter.abortTask(FileOutputCommitter.java:515)
+	at org.apache.hadoop.mapred.FileOutputCommitter.abortTask(FileOutputCommitter.java:177)
+	at org.apache.hadoop.mapred.OutputCommitter.abortTask(OutputCommitter.java:323)
+	at org.apache.hadoop.mapred.Task.taskCleanup(Task.java:1236)
+	at org.apache.hadoop.mapred.YarnChild$3.run(YarnChild.java:186)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:183)
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:495)
+	at org.apache.hadoop.ipc.Client$Connection.setupConnection(Client.java:609)
+	at org.apache.hadoop.ipc.Client$Connection.setupIOstreams(Client.java:707)
+	at org.apache.hadoop.ipc.Client$Connection.access$2800(Client.java:370)
+	at org.apache.hadoop.ipc.Client.getConnection(Client.java:1529)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1446)
+	... 25 more
+
+2015-10-25 21:53:33,946 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Stopping MapTask metrics system...
+2015-10-25 21:53:33,947 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system stopped.
+2015-10-25 21:53:33,948 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system shutdown complete.

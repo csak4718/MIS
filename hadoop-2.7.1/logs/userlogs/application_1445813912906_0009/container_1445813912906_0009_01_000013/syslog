@@ -1,0 +1,68 @@
+2015-10-25 17:56:27,449 WARN [main] org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-10-25 17:56:28,252 INFO [main] org.apache.hadoop.metrics2.impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2015-10-25 17:56:28,993 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+2015-10-25 17:56:28,993 INFO [main] org.apache.hadoop.metrics2.impl.MetricsSystemImpl: MapTask metrics system started
+2015-10-25 17:56:29,122 INFO [main] org.apache.hadoop.mapred.YarnChild: Executing with tokens:
+2015-10-25 17:56:29,122 INFO [main] org.apache.hadoop.mapred.YarnChild: Kind: mapreduce.job, Service: job_1445813912906_0009, Ident: (org.apache.hadoop.mapreduce.security.token.JobTokenIdentifier@159ac93)
+2015-10-25 17:56:29,886 INFO [main] org.apache.hadoop.mapred.YarnChild: Sleeping for 0ms before retrying again. Got null now.
+2015-10-25 17:56:30,602 INFO [main] org.apache.hadoop.mapred.YarnChild: mapreduce.cluster.local.dir for child: /tmp/hadoop-de-weikung/nm-local-dir/usercache/de-weikung/appcache/application_1445813912906_0009
+2015-10-25 17:56:31,021 INFO [main] org.apache.hadoop.conf.Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+2015-10-25 17:56:32,238 INFO [main] org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter: File Output Committer Algorithm version is 1
+2015-10-25 17:56:32,266 INFO [main] org.apache.hadoop.mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2015-10-25 17:56:32,480 WARN [main] org.apache.hadoop.hdfs.BlockReaderFactory: I/O error constructing remote block reader.
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:697)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at org.apache.hadoop.io.WritableUtils.readVLong(WritableUtils.java:308)
+	at org.apache.hadoop.io.WritableUtils.readVIntInRange(WritableUtils.java:348)
+	at org.apache.hadoop.io.Text.readString(Text.java:471)
+	at org.apache.hadoop.io.Text.readString(Text.java:464)
+	at org.apache.hadoop.mapred.MapTask.getSplitDetails(MapTask.java:358)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:426)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:343)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+2015-10-25 17:56:32,485 WARN [main] org.apache.hadoop.hdfs.DFSClient: Failed to connect to /192.168.54.130:50010 for block, add to deadNodes and continue. java.net.ConnectException: Connection refused
+java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:740)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:531)
+	at org.apache.hadoop.hdfs.DFSClient.newConnectedPeer(DFSClient.java:3444)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.nextTcpPeer(BlockReaderFactory.java:777)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.getRemoteBlockReaderFromTcp(BlockReaderFactory.java:694)
+	at org.apache.hadoop.hdfs.BlockReaderFactory.build(BlockReaderFactory.java:355)
+	at org.apache.hadoop.hdfs.DFSInputStream.blockSeekTo(DFSInputStream.java:618)
+	at org.apache.hadoop.hdfs.DFSInputStream.readWithStrategy(DFSInputStream.java:844)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:896)
+	at org.apache.hadoop.hdfs.DFSInputStream.read(DFSInputStream.java:697)
+	at java.io.DataInputStream.readByte(DataInputStream.java:265)
+	at org.apache.hadoop.io.WritableUtils.readVLong(WritableUtils.java:308)
+	at org.apache.hadoop.io.WritableUtils.readVIntInRange(WritableUtils.java:348)
+	at org.apache.hadoop.io.Text.readString(Text.java:471)
+	at org.apache.hadoop.io.Text.readString(Text.java:464)
+	at org.apache.hadoop.mapred.MapTask.getSplitDetails(MapTask.java:358)
+	at org.apache.hadoop.mapred.MapTask.runOldMapper(MapTask.java:426)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:343)
+	at org.apache.hadoop.mapred.YarnChild$2.run(YarnChild.java:164)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:415)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapred.YarnChild.main(YarnChild.java:158)
+2015-10-25 17:56:32,604 INFO [main] org.apache.hadoop.hdfs.DFSClient: Successfully connected to /192.168.54.131:50010 for BP-1892222280-192.168.54.130-1445296806381:blk_1073742229_1408
+2015-10-25 17:56:32,723 INFO [main] org.apache.hadoop.mapred.MapTask: Processing split: hdfs://hadoopmaster:9000/input/chap29:0+13713
+2015-10-25 17:56:32,859 INFO [main] org.apache.hadoop.mapred.MapTask: numReduceTasks: 1

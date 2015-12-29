@@ -1,0 +1,111 @@
+2015-11-22 19:43:21,758 ERROR org.apache.hama.bsp.GroomServer: Fail to communicate with BSPMaster for reporting.
+java.io.IOException: Call to hadoopmaster/192.168.54.130:40000 failed on local exception: java.io.EOFException
+	at org.apache.hama.ipc.Client.wrapException(Client.java:945)
+	at org.apache.hama.ipc.Client.call(Client.java:913)
+	at org.apache.hama.ipc.RPC$Invoker.invoke(RPC.java:239)
+	at com.sun.proxy.$Proxy4.report(Unknown Source)
+	at org.apache.hama.bsp.GroomServer.doReport(GroomServer.java:640)
+	at org.apache.hama.bsp.GroomServer.offerService(GroomServer.java:511)
+	at org.apache.hama.bsp.GroomServer.run(GroomServer.java:869)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hama.ipc.Client$Connection.receiveResponse(Client.java:634)
+	at org.apache.hama.ipc.Client$Connection.run(Client.java:578)
+2015-11-22 19:43:23,687 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-11-22 19:43:23,799 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at hadoopmaster/192.168.54.130
+************************************************************/
+2015-11-22 19:43:56,685 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = hadoopmaster/192.168.54.130
+STARTUP_MSG:   args = [hadoopmaster]
+STARTUP_MSG:   version = 2.7.0
+STARTUP_MSG:   classpath = /usr/local/hama-0.7.0/bin/../conf:/usr/lib/jvm/java-7-openjdk-i386/lib/tools.jar:/usr/local/hama-0.7.0/hama-commons-0.7.0.jar:/usr/local/hama-0.7.0/hama-core-0.7.0.jar:/usr/local/hama-0.7.0/hama-examples-0.7.0.jar:/usr/local/hama-0.7.0/hama-graph-0.7.0.jar:/usr/local/hama-0.7.0/hama-mesos-0.7.0.jar:/usr/local/hama-0.7.0/hama-ml-0.7.0.jar:/usr/local/hama-0.7.0/hama-yarn-0.7.0.jar:/usr/local/hama-0.7.0/lib/activation-1.1.jar:/usr/local/hama-0.7.0/lib/ant-1.6.5.jar:/usr/local/hama-0.7.0/lib/ant-1.7.1.jar:/usr/local/hama-0.7.0/lib/ant-launcher-1.7.1.jar:/usr/local/hama-0.7.0/lib/aopalliance-1.0.jar:/usr/local/hama-0.7.0/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hama-0.7.0/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hama-0.7.0/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hama-0.7.0/lib/api-util-1.0.0-M20.jar:/usr/local/hama-0.7.0/lib/asm-3.1.jar:/usr/local/hama-0.7.0/lib/avro-1.5.3.jar:/usr/local/hama-0.7.0/lib/commons-beanutils-1.8.3.jar:/usr/local/hama-0.7.0/lib/commons-cli-1.2.jar:/usr/local/hama-0.7.0/lib/commons-codec-1.4.jar:/usr/local/hama-0.7.0/lib/commons-collections-3.2.1.jar:/usr/local/hama-0.7.0/lib/commons-compress-1.9.jar:/usr/local/hama-0.7.0/lib/commons-configuration-1.7.jar:/usr/local/hama-0.7.0/lib/commons-daemon-1.0.13.jar:/usr/local/hama-0.7.0/lib/commons-digester-1.8.1.jar:/usr/local/hama-0.7.0/lib/commons-httpclient-3.0.1.jar:/usr/local/hama-0.7.0/lib/commons-io-2.4.jar:/usr/local/hama-0.7.0/lib/commons-lang-2.6.jar:/usr/local/hama-0.7.0/lib/commons-logging-1.1.1.jar:/usr/local/hama-0.7.0/lib/commons-math3-3.0.jar:/usr/local/hama-0.7.0/lib/commons-net-3.1.jar:/usr/local/hama-0.7.0/lib/core-3.1.1.jar:/usr/local/hama-0.7.0/lib/curator-client-2.7.1.jar:/usr/local/hama-0.7.0/lib/curator-framework-2.7.1.jar:/usr/local/hama-0.7.0/lib/curator-recipes-2.7.1.jar:/usr/local/hama-0.7.0/lib/geronimo-annotation_1.0_spec-1.0.jar:/usr/local/hama-0.7.0/lib/geronimo-spec-jta-1.0.1B-rc4.jar:/usr/local/hama-0.7.0/lib/gson-2.2.4.jar:/usr/local/hama-0.7.0/lib/guava-13.0.1.jar:/usr/local/hama-0.7.0/lib/guice-3.0.jar:/usr/local/hama-0.7.0/lib/guice-servlet-3.0.jar:/usr/local/hama-0.7.0/lib/hadoop-annotations-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-auth-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-common-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-hdfs-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-hdfs-2.7.0-tests.jar:/usr/local/hama-0.7.0/lib/hadoop-mapreduce-client-core-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-api-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-client-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-common-2.7.0.jar:/usr/local/hama-0.7.0/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hama-0.7.0/lib/httpclient-4.2.5.jar:/usr/local/hama-0.7.0/lib/httpcore-4.1.2.jar:/usr/local/hama-0.7.0/lib/jackson-core-asl-1.9.2.jar:/usr/local/hama-0.7.0/lib/jackson-jaxrs-1.8.3.jar:/usr/local/hama-0.7.0/lib/jackson-mapper-asl-1.9.2.jar:/usr/local/hama-0.7.0/lib/jackson-xc-1.8.3.jar:/usr/local/hama-0.7.0/lib/javax.inject-1.jar:/usr/local/hama-0.7.0/lib/java-xmlbuilder-0.4.jar:/usr/local/hama-0.7.0/lib/jaxb-api-2.2.2.jar:/usr/local/hama-0.7.0/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hama-0.7.0/lib/jdk.tools-1.7.jar:/usr/local/hama-0.7.0/lib/jersey-client-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-core-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-guice-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-json-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-server-1.9.jar:/usr/local/hama-0.7.0/lib/jets3t-0.9.0.jar:/usr/local/hama-0.7.0/lib/jettison-1.1.jar:/usr/local/hama-0.7.0/lib/jetty-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-annotations-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-plus-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-util-6.1.14.jar:/usr/local/hama-0.7.0/lib/jline-0.9.94.jar:/usr/local/hama-0.7.0/lib/jsch-0.1.42.jar:/usr/local/hama-0.7.0/lib/json-simple-1.1.jar:/usr/local/hama-0.7.0/lib/jsp-2.1-6.1.14.jar:/usr/local/hama-0.7.0/lib/jsp-api-2.1-6.1.14.jar:/usr/local/hama-0.7.0/lib/jsp-api-2.1.jar:/usr/local/hama-0.7.0/lib/jsr305-3.0.0.jar:/usr/local/hama-0.7.0/lib/junit-4.8.1.jar:/usr/local/hama-0.7.0/lib/leveldbjni-all-1.8.jar:/usr/local/hama-0.7.0/lib/log4j-1.2.16.jar:/usr/local/hama-0.7.0/lib/mesos-0.15.0.jar:/usr/local/hama-0.7.0/lib/netty-3.2.2.Final.jar:/usr/local/hama-0.7.0/lib/netty-3.6.2.Final.jar:/usr/local/hama-0.7.0/lib/netty-all-4.0.21.Final.jar:/usr/local/hama-0.7.0/lib/paranamer-2.3.jar:/usr/local/hama-0.7.0/lib/protobuf-java-2.5.0.jar:/usr/local/hama-0.7.0/lib/servlet-api-2.5-6.1.14.jar:/usr/local/hama-0.7.0/lib/servlet-api-2.5.jar:/usr/local/hama-0.7.0/lib/servlet-api-6.0.32.jar:/usr/local/hama-0.7.0/lib/slf4j-api-1.5.8.jar:/usr/local/hama-0.7.0/lib/slf4j-log4j12-1.5.8.jar:/usr/local/hama-0.7.0/lib/snappy-java-1.0.5.jar:/usr/local/hama-0.7.0/lib/stax-api-1.0-2.jar:/usr/local/hama-0.7.0/lib/xercesImpl-2.9.1.jar:/usr/local/hama-0.7.0/lib/xml-apis-1.3.04.jar:/usr/local/hama-0.7.0/lib/xmlenc-0.52.jar:/usr/local/hama-0.7.0/lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r bb6984423a40b65fd025c737b05a30327992928c; compiled by 'vinodkv' on 2015-04-10T22:42Z
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-11-22 19:43:56,697 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-11-22 19:43:56,810 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-11-22 19:43:56,940 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-de-weikung/bsp/local
+2015-11-22 19:43:57,241 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-11-22 19:43:57,566 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-11-22 19:43:57,566 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-11-22 19:43:57,578 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-11-22 19:43:57,578 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-11-22 19:43:57,637 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-11-22 19:43:57,759 INFO org.apache.hama.bsp.GroomServer: starting webserver: hadoopmaster
+2015-11-22 19:43:57,759 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-11-22 19:43:57,759 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-11-22 19:43:57,760 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-11-22 19:43:57,760 INFO org.mortbay.log: jetty-6.1.14
+2015-11-22 19:43:57,797 INFO org.mortbay.log: Extract jar:file:/usr/local/hama-0.7.0/hama-core-0.7.0.jar!/webapp/groomserver/ to /tmp/Jetty_hadoopmaster_40015_groomserver____ioohy0/webapp
+2015-11-22 19:43:58,183 INFO org.mortbay.log: Started SelectChannelConnector@hadoopmaster:40015
+2015-11-22 19:43:58,191 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-11-22 19:43:58,191 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-11-22 19:43:58,191 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-11-22 19:43:58,191 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-11-22 19:43:58,191 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-11-22 19:43:58,192 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-11-22 19:43:58,192 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-11-22 19:43:58,192 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: 127.0.0.1/127.0.0.1:50001
+2015-11-22 19:43:58,192 INFO org.apache.hama.bsp.GroomServer: Starting groom: hadoopmaster:50000
+2015-11-22 19:43:58,200 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
+2015-11-22 19:50:11,174 ERROR org.apache.hama.bsp.GroomServer: Fail to communicate with BSPMaster for reporting.
+java.io.IOException: Call to hadoopmaster/192.168.54.130:40000 failed on local exception: java.io.EOFException
+	at org.apache.hama.ipc.Client.wrapException(Client.java:945)
+	at org.apache.hama.ipc.Client.call(Client.java:913)
+	at org.apache.hama.ipc.RPC$Invoker.invoke(RPC.java:239)
+	at com.sun.proxy.$Proxy4.report(Unknown Source)
+	at org.apache.hama.bsp.GroomServer.doReport(GroomServer.java:640)
+	at org.apache.hama.bsp.GroomServer.offerService(GroomServer.java:511)
+	at org.apache.hama.bsp.GroomServer.run(GroomServer.java:869)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.hama.ipc.Client$Connection.receiveResponse(Client.java:634)
+	at org.apache.hama.ipc.Client$Connection.run(Client.java:578)
+2015-11-22 19:50:14,157 ERROR org.apache.hama.GroomServerRunner: RECEIVED SIGNAL 15: SIGTERM
+2015-11-22 19:50:14,161 INFO org.apache.hama.GroomServerRunner: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down GroomServer at hadoopmaster/192.168.54.130
+************************************************************/
+2015-11-22 19:50:14,186 INFO org.apache.hama.ipc.Client: Retrying connect to server: hadoopmaster/192.168.54.130:40000. Already tried 0 time(s); retry policy is RetryUpToMaximumCountWithFixedSleep(maxRetries=10, sleepTime=1 SECONDS)
+2015-11-22 20:05:45,534 INFO org.apache.hama.GroomServerRunner: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting GroomServer
+STARTUP_MSG:   host = hadoopmaster/192.168.54.130
+STARTUP_MSG:   args = [hadoopmaster]
+STARTUP_MSG:   version = 2.7.0
+STARTUP_MSG:   classpath = /usr/local/hama-0.7.0/bin/../conf:/usr/lib/jvm/java-7-openjdk-i386/lib/tools.jar:/usr/local/hama-0.7.0/hama-commons-0.7.0.jar:/usr/local/hama-0.7.0/hama-core-0.7.0.jar:/usr/local/hama-0.7.0/hama-examples-0.7.0.jar:/usr/local/hama-0.7.0/hama-graph-0.7.0.jar:/usr/local/hama-0.7.0/hama-mesos-0.7.0.jar:/usr/local/hama-0.7.0/hama-ml-0.7.0.jar:/usr/local/hama-0.7.0/hama-yarn-0.7.0.jar:/usr/local/hama-0.7.0/lib/activation-1.1.jar:/usr/local/hama-0.7.0/lib/ant-1.6.5.jar:/usr/local/hama-0.7.0/lib/ant-1.7.1.jar:/usr/local/hama-0.7.0/lib/ant-launcher-1.7.1.jar:/usr/local/hama-0.7.0/lib/aopalliance-1.0.jar:/usr/local/hama-0.7.0/lib/apacheds-i18n-2.0.0-M15.jar:/usr/local/hama-0.7.0/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/usr/local/hama-0.7.0/lib/api-asn1-api-1.0.0-M20.jar:/usr/local/hama-0.7.0/lib/api-util-1.0.0-M20.jar:/usr/local/hama-0.7.0/lib/asm-3.1.jar:/usr/local/hama-0.7.0/lib/avro-1.5.3.jar:/usr/local/hama-0.7.0/lib/commons-beanutils-1.8.3.jar:/usr/local/hama-0.7.0/lib/commons-cli-1.2.jar:/usr/local/hama-0.7.0/lib/commons-codec-1.4.jar:/usr/local/hama-0.7.0/lib/commons-collections-3.2.1.jar:/usr/local/hama-0.7.0/lib/commons-compress-1.9.jar:/usr/local/hama-0.7.0/lib/commons-configuration-1.7.jar:/usr/local/hama-0.7.0/lib/commons-daemon-1.0.13.jar:/usr/local/hama-0.7.0/lib/commons-digester-1.8.1.jar:/usr/local/hama-0.7.0/lib/commons-httpclient-3.0.1.jar:/usr/local/hama-0.7.0/lib/commons-io-2.4.jar:/usr/local/hama-0.7.0/lib/commons-lang-2.6.jar:/usr/local/hama-0.7.0/lib/commons-logging-1.1.1.jar:/usr/local/hama-0.7.0/lib/commons-math3-3.0.jar:/usr/local/hama-0.7.0/lib/commons-net-3.1.jar:/usr/local/hama-0.7.0/lib/core-3.1.1.jar:/usr/local/hama-0.7.0/lib/curator-client-2.7.1.jar:/usr/local/hama-0.7.0/lib/curator-framework-2.7.1.jar:/usr/local/hama-0.7.0/lib/curator-recipes-2.7.1.jar:/usr/local/hama-0.7.0/lib/geronimo-annotation_1.0_spec-1.0.jar:/usr/local/hama-0.7.0/lib/geronimo-spec-jta-1.0.1B-rc4.jar:/usr/local/hama-0.7.0/lib/gson-2.2.4.jar:/usr/local/hama-0.7.0/lib/guava-13.0.1.jar:/usr/local/hama-0.7.0/lib/guice-3.0.jar:/usr/local/hama-0.7.0/lib/guice-servlet-3.0.jar:/usr/local/hama-0.7.0/lib/hadoop-annotations-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-auth-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-common-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-hdfs-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-hdfs-2.7.0-tests.jar:/usr/local/hama-0.7.0/lib/hadoop-mapreduce-client-core-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-api-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-client-2.7.0.jar:/usr/local/hama-0.7.0/lib/hadoop-yarn-common-2.7.0.jar:/usr/local/hama-0.7.0/lib/htrace-core-3.1.0-incubating.jar:/usr/local/hama-0.7.0/lib/httpclient-4.2.5.jar:/usr/local/hama-0.7.0/lib/httpcore-4.1.2.jar:/usr/local/hama-0.7.0/lib/jackson-core-asl-1.9.2.jar:/usr/local/hama-0.7.0/lib/jackson-jaxrs-1.8.3.jar:/usr/local/hama-0.7.0/lib/jackson-mapper-asl-1.9.2.jar:/usr/local/hama-0.7.0/lib/jackson-xc-1.8.3.jar:/usr/local/hama-0.7.0/lib/javax.inject-1.jar:/usr/local/hama-0.7.0/lib/java-xmlbuilder-0.4.jar:/usr/local/hama-0.7.0/lib/jaxb-api-2.2.2.jar:/usr/local/hama-0.7.0/lib/jaxb-impl-2.2.3-1.jar:/usr/local/hama-0.7.0/lib/jdk.tools-1.7.jar:/usr/local/hama-0.7.0/lib/jersey-client-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-core-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-guice-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-json-1.9.jar:/usr/local/hama-0.7.0/lib/jersey-server-1.9.jar:/usr/local/hama-0.7.0/lib/jets3t-0.9.0.jar:/usr/local/hama-0.7.0/lib/jettison-1.1.jar:/usr/local/hama-0.7.0/lib/jetty-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-annotations-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-plus-6.1.14.jar:/usr/local/hama-0.7.0/lib/jetty-util-6.1.14.jar:/usr/local/hama-0.7.0/lib/jline-0.9.94.jar:/usr/local/hama-0.7.0/lib/jsch-0.1.42.jar:/usr/local/hama-0.7.0/lib/json-simple-1.1.jar:/usr/local/hama-0.7.0/lib/jsp-2.1-6.1.14.jar:/usr/local/hama-0.7.0/lib/jsp-api-2.1-6.1.14.jar:/usr/local/hama-0.7.0/lib/jsp-api-2.1.jar:/usr/local/hama-0.7.0/lib/jsr305-3.0.0.jar:/usr/local/hama-0.7.0/lib/junit-4.8.1.jar:/usr/local/hama-0.7.0/lib/leveldbjni-all-1.8.jar:/usr/local/hama-0.7.0/lib/log4j-1.2.16.jar:/usr/local/hama-0.7.0/lib/mesos-0.15.0.jar:/usr/local/hama-0.7.0/lib/netty-3.2.2.Final.jar:/usr/local/hama-0.7.0/lib/netty-3.6.2.Final.jar:/usr/local/hama-0.7.0/lib/netty-all-4.0.21.Final.jar:/usr/local/hama-0.7.0/lib/paranamer-2.3.jar:/usr/local/hama-0.7.0/lib/protobuf-java-2.5.0.jar:/usr/local/hama-0.7.0/lib/servlet-api-2.5-6.1.14.jar:/usr/local/hama-0.7.0/lib/servlet-api-2.5.jar:/usr/local/hama-0.7.0/lib/servlet-api-6.0.32.jar:/usr/local/hama-0.7.0/lib/slf4j-api-1.5.8.jar:/usr/local/hama-0.7.0/lib/slf4j-log4j12-1.5.8.jar:/usr/local/hama-0.7.0/lib/snappy-java-1.0.5.jar:/usr/local/hama-0.7.0/lib/stax-api-1.0-2.jar:/usr/local/hama-0.7.0/lib/xercesImpl-2.9.1.jar:/usr/local/hama-0.7.0/lib/xml-apis-1.3.04.jar:/usr/local/hama-0.7.0/lib/xmlenc-0.52.jar:/usr/local/hama-0.7.0/lib/zookeeper-3.4.5.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r bb6984423a40b65fd025c737b05a30327992928c; compiled by 'vinodkv' on 2015-04-10T22:42Z
+STARTUP_MSG:   java = 1.7.0_79
+************************************************************/
+2015-11-22 20:05:45,541 INFO org.apache.hama.GroomServerRunner: registered UNIX signal handlers for [TERM, HUP, INT]
+2015-11-22 20:05:45,599 INFO org.apache.hama.bsp.GroomServer: groom start
+2015-11-22 20:05:45,664 INFO org.apache.hama.bsp.GroomServer: /tmp/hadoop-de-weikung/bsp/local
+2015-11-22 20:05:45,838 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2015-11-22 20:05:46,025 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50000
+2015-11-22 20:05:46,029 INFO org.apache.hama.ipc.Server: IPC Server listener on 50000: starting
+2015-11-22 20:05:46,030 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-11-22 20:05:46,034 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50000: starting
+2015-11-22 20:05:46,059 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2015-11-22 20:05:46,104 INFO org.apache.hama.bsp.GroomServer: starting webserver: hadoopmaster
+2015-11-22 20:05:46,104 INFO org.apache.hama.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 40015
+2015-11-22 20:05:46,104 INFO org.apache.hama.http.HttpServer: listener.getLocalPort() returned 40015 webServer.getConnectors()[0].getLocalPort() returned 40015
+2015-11-22 20:05:46,104 INFO org.apache.hama.http.HttpServer: Jetty bound to port 40015
+2015-11-22 20:05:46,104 INFO org.mortbay.log: jetty-6.1.14
+2015-11-22 20:05:46,136 INFO org.mortbay.log: Extract jar:file:/usr/local/hama-0.7.0/hama-core-0.7.0.jar!/webapp/groomserver/ to /tmp/Jetty_hadoopmaster_40015_groomserver____ioohy0/webapp
+2015-11-22 20:05:46,638 INFO org.mortbay.log: Started SelectChannelConnector@hadoopmaster:40015
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: Starting Socket Reader #1 for port 50001
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: IPC Server Responder: starting
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: IPC Server listener on 50001: starting
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: IPC Server handler 0 on 50001: starting
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: IPC Server handler 1 on 50001: starting
+2015-11-22 20:05:46,643 INFO org.apache.hama.ipc.Server: IPC Server handler 2 on 50001: starting
+2015-11-22 20:05:46,644 INFO org.apache.hama.ipc.Server: IPC Server handler 3 on 50001: starting
+2015-11-22 20:05:46,644 INFO org.apache.hama.bsp.GroomServer: TaskReportServer up at: 127.0.0.1/127.0.0.1:50001
+2015-11-22 20:05:46,644 INFO org.apache.hama.bsp.GroomServer: Starting groom: hadoopmaster:50000
+2015-11-22 20:05:46,652 INFO org.apache.hama.ipc.Server: IPC Server handler 4 on 50001: starting
